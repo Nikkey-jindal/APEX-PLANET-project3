@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: #073b4c;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #e0f7fa,
+        #f5f7fa
+    );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #073b4c;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Features */
+
+.features {
+    width: 85%;
+    margin: 60px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+
+/* Common Section */
+
+.section {
+    width: 85%;
+    margin: 80px auto;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+/* Quiz */
+
+.quiz-box {
+    background: white;
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-box h3 {
+    margin-bottom: 25px;
+}
+
+.option {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 12px 0;
+
+    border: 2px solid #ddd;
+
+    background: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.option:hover {
+    background: #eef7f8;
+}
+
+.correct {
+    background: #c8e6c9;
+}
+
+.wrong {
+    background: #ffcdd2;
+}
+
+#score {
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* API */
+
+.api-section {
+    background: white;
+
+    padding: 50px 20px;
+
+    border-radius: 15px;
+}
+
+.joke-box {
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background: #f5f7fa;
+
+    border-radius: 10px;
+
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joke {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+
+footer {
+    background: #073b4c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .quiz-box {
+        padding: 25px 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+}

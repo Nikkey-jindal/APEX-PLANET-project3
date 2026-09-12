@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Styling & JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>✨ JS Interactive</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#api">API</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="tag">APEX PLANET • TASK 3</p>
+
+            <h1>Advanced Styling & JavaScript</h1>
+
+            <p>
+                A responsive and interactive website built using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <a href="#quiz" class="btn">Start Quiz</a>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature-card">
+            <div class="icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>
+                Website automatically adjusts according to
+                mobile, tablet and desktop screens.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">🧠</div>
+            <h3>Interactive Quiz</h3>
+            <p>
+                Test your JavaScript knowledge with an
+                interactive quiz.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">🌐</div>
+            <h3>API Integration</h3>
+            <p>
+                Fetch real-time data from a public API
+                using JavaScript.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+
+        <h2>🧠 JavaScript Quiz</h2>
+
+        <div class="quiz-box">
+
+            <h3 id="question">Question will appear here</h3>
+
+            <div id="options"></div>
+
+            <button id="nextBtn" class="btn">
+                Next Question
+            </button>
+
+            <p id="score"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- API Section -->
+    <section id="api" class="section api-section">
+
+        <h2>🌐 Random Joke API</h2>
+
+        <p>
+            This section fetches a random joke from a public API.
+        </p>
+
+        <button id="jokeBtn" class="btn">
+            Get Random Joke
+        </button>
+
+        <div class="joke-box">
+            <p id="joke">Click the button to get a joke!</p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Advanced Styling & JavaScript | APEX Planet Task 3</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
